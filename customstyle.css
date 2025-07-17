@@ -1,15 +1,15 @@
-/* Global styles */
+/* === GLOBAL STYLES === */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: #f7f9fc;
-  color: #222;
+  background-color: #0d1117;
+  color: #e6edf3;
 }
 
 a {
-  color: #1a73e8;
+  color: #58a6ff;
   text-decoration: none;
 }
 
@@ -24,17 +24,17 @@ a:hover {
 }
 
 h1, h2, h3 {
-  color: #333;
+  color: #ffffff;
 }
 
-/* Navbar */
+/* === NAVBAR === */
 .navbar {
-  background-color: #ffffff;
+  background-color: #161b22;
   padding: 15px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
 
 .navbar ul {
@@ -51,18 +51,19 @@ h1, h2, h3 {
   font-weight: 600;
   padding: 6px 12px;
   border-radius: 6px;
+  color: #c9d1d9;
   transition: background 0.2s ease-in-out;
 }
 
 .navbar a:hover {
-  background-color: #f1f3f4;
+  background-color: #30363d;
 }
 
-/* Hero section */
+/* === HERO === */
 .hero {
   text-align: center;
   padding: 80px 20px 40px;
-  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  background: linear-gradient(to right, #0d1117, #161b22);
 }
 
 .hero-title {
@@ -72,14 +73,14 @@ h1, h2, h3 {
 
 .hero-subtitle {
   font-size: 1.3em;
-  color: #555;
+  color: #8b949e;
 }
 
 .highlight {
-  color: #1a73e8;
+  color: #58a6ff;
 }
 
-/* Project cards */
+/* === PROJECT CARDS === */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -87,35 +88,59 @@ h1, h2, h3 {
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: #161b22;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 .project-card h3 {
   margin-top: 0;
-  color: #222;
+  color: #ffffff;
 }
 
 .project-card p {
-  color: #555;
+  color: #8b949e;
   font-size: 0.95em;
   margin-bottom: 12px;
 }
 
 .project-card a {
   font-weight: bold;
-  color: #1a73e8;
+  color: #58a6ff;
 }
 
-/* List sections */
+/* === PROJECT IMAGES === */
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+}
+
+/* === EXPANDABLE SECTIONS === */
+.expand-btn {
+  background: none;
+  border: none;
+  color: #8b949e;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.expand-content {
+  padding: 10px 0;
+  display: none;
+  color: #c9d1d9;
+}
+
+/* === LIST SECTIONS === */
 ul {
   padding-left: 20px;
 }
@@ -124,22 +149,23 @@ li {
   margin-bottom: 10px;
 }
 
-/* Contact section */
+/* === CONTACT SECTION === */
 #contact a {
   display: block;
   margin-bottom: 10px;
+  color: #58a6ff;
 }
 
-/* Footer */
+/* === FOOTER === */
 footer {
   text-align: center;
   padding: 30px 20px;
   font-size: 0.9em;
-  background-color: #e8f0fe;
-  color: #444;
+  background-color: #161b22;
+  color: #8b949e;
 }
 
-/* Responsive tweaks */
+/* === MEDIA QUERIES === */
 @media screen and (max-width: 600px) {
   .hero-title {
     font-size: 2.2em;
@@ -148,12 +174,6 @@ footer {
   .hero-subtitle {
     font-size: 1.1em;
   }
-.project-img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
 
   .navbar ul {
     gap: 12px;
