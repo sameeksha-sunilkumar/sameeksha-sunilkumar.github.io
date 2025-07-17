@@ -7,6 +7,20 @@ body {
   background-color: #0d1117;
   color: #e6edf3;
 }
+button {
+  background-color: #238636;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #2ea043;
+}
 
 a {
   color: #58a6ff;
@@ -137,6 +151,10 @@ li {
   color: #c9d1d9;
 }
 
+a {
+  transition: color 0.2s ease-in-out;
+}
+
 /* ===== Contact Section ===== */
 #contact a {
   display: block;
@@ -180,6 +198,11 @@ footer {
   cursor: pointer;
   font-weight: bold;
   z-index: 10001;
+}
+#contact a {
+  color: #58a6ff;
+  font-weight: 500;
+  word-break: break-word;
 }
 
 /* ===== Responsive Tweaks ===== */
