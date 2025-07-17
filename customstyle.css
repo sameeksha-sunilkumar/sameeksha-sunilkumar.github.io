@@ -148,6 +148,12 @@ footer {
   .hero-subtitle {
     font-size: 1.1em;
   }
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
 
   .navbar ul {
     gap: 12px;
