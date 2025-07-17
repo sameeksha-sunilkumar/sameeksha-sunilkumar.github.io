@@ -1,40 +1,41 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // DOM elements
-    const images = document.querySelectorAll('.image img, .gallery img');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const closeBtn = document.querySelector('.lightbox-close');
-    
-    /**
-     * Close the lightbox and restore scrolling
-     */
-    const closeLightbox = () => {
-        lightbox.style.display = 'none';
-        document.body.style.overflow = ''; // Restore scrolling
-    };
+  // Target all images inside .image or .gallery containers
+  const images = document.querySelectorAll('.image img, .gallery img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.lightbox-close');
 
-    // Initialize zoomable images
-    images.forEach(img => {
-        img.classList.add('zoomable');
-        img.addEventListener('click', function() {
-            lightboxImg.src = this.src;
-            lightbox.style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        });
-    });
+  // Close the lightbox
+  const closeLightbox = () => {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = ''; // Restore scroll
+    lightboxImg.src = '';
+  };
 
-    // Event Listeners
-    closeBtn.addEventListener('click', closeLightbox);
-    
-    lightbox.addEventListener('click', function(e) {
-        if (e.target === lightbox) {
-            closeLightbox();
-        }
+  // Setup image click zoom
+  images.forEach(img => {
+    img.classList.add('zoomable');
+    img.style.cursor = 'zoom-in';
+
+    img.addEventListener('click', function () {
+      lightboxImg.src = this.src;
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // Lock scroll
     });
-    
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && lightbox.style.display === 'flex') {
-            closeLightbox();
-        }
-    });
+  });
+
+  // Click close button
+  closeBtn.addEventListener('click', closeLightbox);
+
+  // Click outside image
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // ESC to close
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+      closeLightbox();
+    }
+  });
 });
