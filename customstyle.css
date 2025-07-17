@@ -12,6 +12,11 @@ a {
   color: #58a6ff;
   text-decoration: none;
 }
+a:focus,
+.expand-btn:focus {
+  outline: 2px dashed #58a6ff;
+  outline-offset: 2px;
+}
 
 a:hover {
   text-decoration: underline;
@@ -166,17 +171,16 @@ footer {
 }
 
 /* === MEDIA QUERIES === */
-@media screen and (max-width: 600px) {
-  .hero-title {
-    font-size: 2.2em;
+@media screen and (max-width: 480px) {
+  .project-img {
+    margin-bottom: 10px;
+    border-radius: 6px;
   }
 
-  .hero-subtitle {
-    font-size: 1.1em;
+  .project-card {
+    padding: 15px;
   }
-
-  .navbar ul {
-    gap: 12px;
-    font-size: 0.95em;
-  }
+}
+[data-aos] {
+  will-change: transform, opacity;
 }
