@@ -3,9 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sameeksha S | ML Researcher Portfolio</title>
+  <title>Sameeksha S | AI enthusiast </title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- AOS CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
+  <!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar">
@@ -35,35 +46,35 @@
 
   <!-- Projects -->
   <section id="projects" class="section">
-    <h2>Top Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Multimodal Emotion Recognition</h3>
-        <p>Real-time system using audio and facial data with MLP & CNN integration.</p>
-        <a href="https://github.com/sameeksha-sunilkumar/multimodal-emotion-recognition" target="_blank">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Precision Baking AI</h3>
-        <p>Conversational AI with Gemini API to convert units, scale recipes & substitute ingredients.</p>
-        <a href="https://github.com/sameeksha-sunilkumar/precision-baking-ai" target="_blank">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Malaria Detection with C3TR-YOLO</h3>
-        <p>YOLOv5-based detection system with parasitized cell images and full training logs.</p>
-        <a href="https://github.com/sameeksha-sunilkumar/malaria-c3tr-yolov5" target="_blank">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Smart Home Automation</h3>
-        <p>AI + Arduino-based home system with face detection, voice control, and smart mirror integration.</p>
-        <a href="https://github.com/sameeksha-sunilkumar/home-ai-automation" target="_blank">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Prosthetic Limb Design using GANs</h3>
-        <p>Simulation-based limb optimization using GANs to enhance motion and comfort.</p>
-        <a href="https://github.com/sameeksha-sunilkumar/prosthetic-gan" target="_blank">View Project</a>
-      </div>
+  <h2>Top Projects</h2>
+  <div class="project-grid">
+
+    <!-- Intelligent Illumination -->
+    <div class="project-card" data-aos="fade-up">
+      <img src="assets/img/illumination.png" alt="Intelligent Illumination" class="project-img" />
+      <h3>Intelligent Illumination</h3>
+      <p>AIoT lighting control system using YOLO and Arduino to detect human presence in real-time and trigger lighting automation.</p>
+      <a href="https://github.com/sameeksha-sunilkumar/Intelligent-Illumination" target="_blank">View Project</a>
     </div>
-  </section>
+
+    <!-- Wall Crack Detection -->
+    <div class="project-card" data-aos="fade-up">
+      <img src="assets/img/crack.png" alt="Wall Crack Detection" class="project-img" />
+      <h3>Wall Crack Detection</h3>
+      <p>Binary image classifier using custom CNN to detect structural damage in wall surfaces from real-world images.</p>
+      <a href="https://github.com/sameeksha-sunilkumar/wall-crack-detection" target="_blank">View Project</a>
+    </div>
+
+    <!-- Malaria Detection with YOLOv5 + C3TR -->
+    <div class="project-card" data-aos="fade-up">
+      <img src="assets/img/malaria.png" alt="Malaria Detection" class="project-img" />
+      <h3>Malaria Detection using C3TR-YOLOv5</h3>
+      <p>Enhanced YOLOv5 architecture with C3TR and BiFPN for detecting malaria-infected cells, trained on Roboflow with precision-recall metrics.</p>
+      <a href="https://github.com/sameeksha-sunilkumar/malaria-detection-using-c3tr" target="_blank">View Project</a>
+    </div>
+
+  </div>
+</section>
 
   <!-- Papers -->
   <section id="papers" class="section">
