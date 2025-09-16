@@ -4,23 +4,23 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: #1e1e2e;   /* Dark gray background */
-  color: #e6e6f0;              /* Light gray text */
+  background-color: #1b1b29;   /* Darker gray background */
+  color: #e4e4f0;              /* Light gray text */
 }
 
 a {
-  color: #9b5de5;              /* Purple links */
+  color: #a87ee6;              /* Soft purple links */
   text-decoration: none;
 }
 a:focus,
 .expand-btn:focus {
-  outline: 2px dashed #9b5de5;
+  outline: 2px dashed #a87ee6;
   outline-offset: 2px;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #7b3fb0;              /* Darker purple on hover */
+  color: #845ec2;              /* Darker purple hover */
 }
 
 .section {
@@ -35,7 +35,7 @@ h1, h2, h3 {
 
 /* === NAVBAR === */
 .navbar {
-  background-color: #2a2a40;   /* Medium gray */
+  background-color: #242438;   /* Medium gray */
   padding: 15px 20px;
   position: sticky;
   top: 0;
@@ -57,12 +57,12 @@ h1, h2, h3 {
   font-weight: 600;
   padding: 6px 12px;
   border-radius: 6px;
-  color: #e6e6f0;
+  color: #e4e4f0;
   transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .navbar a:hover {
-  background-color: #7b3fb0;   /* Purple hover */
+  background-color: #845ec2;   /* Purple hover */
   color: #ffffff;
 }
 
@@ -70,7 +70,7 @@ h1, h2, h3 {
 .hero {
   text-align: center;
   padding: 80px 20px 40px;
-  background: linear-gradient(to right, #1e1e2e, #2a2a40);
+  background: linear-gradient(to right, #1b1b29, #242438);
 }
 
 .hero-title {
@@ -81,11 +81,11 @@ h1, h2, h3 {
 
 .hero-subtitle {
   font-size: 1.3em;
-  color: #a1a1b5;              /* Muted gray */
+  color: #b0b0c6;              /* Muted gray */
 }
 
 .highlight {
-  color: #9b5de5;              /* Purple accent */
+  color: #a87ee6;              /* Purple accent */
 }
 
 /* === PROJECT CARDS === */
@@ -96,7 +96,7 @@ h1, h2, h3 {
 }
 
 .project-card {
-  background-color: #2a2a40;
+  background-color: #242438;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -114,18 +114,18 @@ h1, h2, h3 {
 }
 
 .project-card p {
-  color: #a1a1b5;
+  color: #b0b0c6;
   font-size: 0.95em;
   margin-bottom: 12px;
 }
 
 .project-card a {
   font-weight: bold;
-  color: #9b5de5;
+  color: #a87ee6;
 }
 
 .project-card a:hover {
-  color: #7b3fb0;
+  color: #845ec2;
 }
 
 /* === PROJECT IMAGES === */
@@ -140,7 +140,7 @@ h1, h2, h3 {
 .expand-btn {
   background: none;
   border: none;
-  color: #a1a1b5;
+  color: #b0b0c6;
   font-weight: 600;
   margin: 10px 0;
   cursor: pointer;
@@ -148,13 +148,13 @@ h1, h2, h3 {
 }
 
 .expand-btn:hover {
-  color: #9b5de5;
+  color: #a87ee6;
 }
 
 .expand-content {
   padding: 10px 0;
   display: none;
-  color: #e6e6f0;
+  color: #e4e4f0;
 }
 
 /* === LIST SECTIONS === */
@@ -164,18 +164,18 @@ ul {
 
 li {
   margin-bottom: 10px;
-  color: #e6e6f0;
+  color: #e4e4f0;
 }
 
 /* === CONTACT SECTION === */
 #contact a {
   display: block;
   margin-bottom: 10px;
-  color: #9b5de5;
+  color: #a87ee6;
 }
 
 #contact a:hover {
-  color: #7b3fb0;
+  color: #845ec2;
 }
 
 /* === FOOTER === */
@@ -183,8 +183,8 @@ footer {
   text-align: center;
   padding: 30px 20px;
   font-size: 0.9em;
-  background-color: #2a2a40;
-  color: #a1a1b5;
+  background-color: #242438;
+  color: #b0b0c6;
 }
 
 /* === MEDIA QUERIES === */
